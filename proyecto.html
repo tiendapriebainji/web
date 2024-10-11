@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="esrtilos.css">
+    <link rel="stylesheet" href="archivo.js">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+            <nav>
+                <a href="#"><img src="imagenes/logo.jpeg" alt=""></a>
+
+                 <div>
+                <a href="#">INICIO</a>
+                <a href="file:///C:/Users/MINEDUCYT/Desktop/proyecto%20tecnologico/producto.html">PRODUCTOS</a>
+                <a href="file:///C:/Users/MINEDUCYT/Desktop/proyecto%20tecnologico/carrito.html" id="cart"><img src="https://www.xenonfactory.es/wp-content/uploads/2019/01/carrito-compras-desarrollo-tienda-virtual.png" alt="carrito de compras "><span id="cuenta carrito">0</span></a>
+                </div>   
+            </nav>
+    
+    </header>
+
+    <div class="ENCABEZADO">
+        <P>TIENDA EN LINEA</P>
+        <h1>MODA UNICA </h1>
+        <p>"encuentra todo lo que necesitas sin salir de casa"</p>
+    </div>
+    
+
+    <section class="productos">
+        
+        <div class="producto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjEoZew2H7Uk6ZIKk5GbLPgMXHL9rfoVxRAA&s" alt="Camisa">
+           <div class="imformacion">
+            <p>Camisa</p>
+            <p class="precio">$199<span>.99</span></p>
+            <button >agregar al carrito</button>
+           </div>
+        </div>
+
+        <div class="producto">
+            <img src="https://beisbolmania.mx/cdn/shop/products/GorraBeisbolSoftbolNewEraLADodgers59FiftyAzulBlanco_0000_Capa12_2000x.jpg?v=1678388130" alt="Gorra">
+            
+            <p>Gorra - $35</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://i.pinimg.com/736x/f9/6f/62/f96f621de4b6dac2e67d32f3fac8dec6.jpg" alt="Pantalón">
+            <p>Pantalón - $40</p>
+            <button class="btn" onclick="agregarAlCarrito('Pantalón', 40)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://neweraec.vtexassets.com/arquivos/ids/167753/60422495_6.jpg?v=638387740804370000" alt="Gorra">
+            <p>Gorra - $35</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <section class="productos">
+        
+        <div class="producto">
+            <img src="https://acidhouse.com.co/wp-content/uploads/492050.png" alt="Camisa">
+            <p>Camisa - $20</p>
+            <button class="btn" onclick="agregarAlCarrito('Camisa', 20)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://pantalonesdemezclilla.mx/cdn/shop/files/regular-cargo-jeans-marron-para-hombre_1.jpg?v=1706895864" alt="Pantalón">
+            <p>Pantalón - $40</p>
+            <button class="btn" onclick="agregarAlCarrito('Pantalón', 40)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtUjdGguiagqcHWw3H7cJO0-WkgVdjYm0Meg&s" alt="Gorra">
+            <p>Gorra - $35</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://i.pinimg.com/564x/a7/1d/d7/a71dd78764914ce9fc288a1adfd3dd6a.jpg" alt="Camisa">
+            <p>Camisa - $20</p>
+            <button class="btn" onclick="agregarAlCarrito('Camisa', 20)">Agregar al carrito</button>
+        </div>
+    </section>
+    <section class="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button class="btn vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Ropa</p>
+    </footer>
+
+    <script src="archivo.js"></script>
+</body>
+</html>

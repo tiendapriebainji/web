@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cfcbcf;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+section.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.producto {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 8px;
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.producto p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.vaciar {
+    background-color: #dc3545;
+}
+
+.vaciar:hover {
+    background-color: #c82333;
+}
+
+section.carrito {
+    padding: 20px;
+    text-align: center;
+}
+
+section.carrito ul {
+    list-style: none;
+    padding: 0;
+}
+
+section.carrito ul li {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Open Sans';
+}
+
+header{
+	background-color: #f2f2f2;
+	text-align: center;
+	padding: 25px;
+    box-shadow: o 3px 5px rgba(red, green, blue, alpha);
+    padding: 10px 0;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	color: #696969;
+	margin: 0 30px;
+	padding: 5px 15px;
+	border-radius: 30px;
+}
+nav a:hover:not(#cart) {
+	background-color: #000;
+	color: #fff;
+}
+.ENCABEZADO{
+	background-image: url(https://img.freepik.com/fotos-premium/surtido-ropa-fondo-pantalla-hd-8k-imagen-fotografica-stock_890746-48440.jpg?w=826);
+	background-size: cover;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #faf9f9;
+}
+.encabezado-img p{
+	font-size: 18px;
+}
+.encabezado-img h1{
+	font-size: 50px;
+	padding: 15px 0;
+
+}
+header nav img{
+    height: 35px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+nav a {
+    text-decoration: none;
+}
+
+header nav div{
+    display: flex;
+    align-items: center;
+    gap: 30px ;
+}
+
+#cuenta-carrito{
+    background-color: #cfcbcf;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio:1 ;
+    text-align: center;
+    position: absolute;
+    
+}
