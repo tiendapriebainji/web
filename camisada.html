@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilosda.css">
+    <link rel="stylesheet" href="esrtilos.css">
+</head>
+<body>
+    <div class="ENCABEZADO">
+        <P>TIENDA EN LINEA</P>
+        <h1>MODA UNICA </h1>
+        <p>"encuentra todo lo que necesitas sin salir de casa"</p>
+    </div>
+
+    <section class="productos">
+
+        
+        <div class="producto" id="producto">
+            <img src="https://pierrecardinca.com/thumb/PBG-9002C.webp" alt="Camisa">
+            <p>Camisa - $20</p>
+            <button class="btn" onclick="agregarAlCarrito('Camisa', 20)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://resources.sears.com.mx/medios-plazavip/mkt/615f0a15a86d1_whatsapp-image-2021-10-07-at-93819-amjpeg.jpg?scale=500&qlty=75" alt="Gorra">
+            
+            <p>camisa - $25</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPm9NrL0T6rCLUHcSL_mhVmL7hZE3rNJUbVJx8jH4H4rI2DnhmZZDOQmW8qzTfVqYybEs&usqp=CAU" alt="Pantalón">
+            <p>camisa - $40</p>
+            <button class="btn" onclick="agregarAlCarrito('Pantalón', 40)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://dotaciondeuniformes.com/wp-content/uploads/2024/04/camisa-administrativo.jpg" alt="Gorra">
+            <p>camisa - $35</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+    </div>
+    </section>
+
+    <section class="productos">
+        
+        <div class="producto">
+            <img src="https://m.media-amazon.com/images/I/71YJ4Yiq5oL._AC_UY1000_.jpg" alt="Camisa">
+            <p>Camisa - $20</p>
+            <button class="btn" onclick="agregarAlCarrito('Camisa', 20)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://www.rominabarak.com.ar/wp-content/uploads/moda-otono-invierno-para-mujer-camisetas-y-camisas-2015-20161-600x765-4-82519_600x675.jpg" width="350px", height="200px"     alt="Gorra">
+           
+            <p>camisa - $35</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://uniraga.com/cdn/shop/products/IMG_0125Ed_a2479781-4704-4f2c-b5b6-98481bfab6a1.jpg?v=1683654427&width=1946" alt="Pantalón">
+            <p>camisa - $40</p>
+            <button class="btn" onclick="agregarAlCarrito('Pantalón', 40)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://image.made-in-china.com/202f0j00YnjiQCTshbph/Spring-Urban-Elegant-Women-Long-Sleeve-Mature-Blouses-Lady-Loose-Casual-Chiffon-Shirt-Tops-Blouse.webp" alt="Gorra">
+            <p>Gorra - $35</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <section class="productos">
+        
+        <div class="producto">
+            <img src="https://img.freepik.com/foto-gratis/mujer-vestida-camisa-blanca-manga-larga-jeans_53876-102914.jpg">
+            <p>Camisa - $20</p>
+            <button class="btn" onclick="agregarAlCarrito('Camisa', 20)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://pierrecardinca.com/thumb/POC-1509L.webp" alt="Gorra">
+            
+            <p>camisa - $35</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://siman.vtexassets.com/arquivos/ids/5007803/image-408875742d0f4633ab9dc61cd794d078.jpg?v=638373159864530000" alt="Pantalón">
+            <p>camisa de algodon - $40</p>
+            <button class="btn" onclick="agregarAlCarrito('Pantalón', 40)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/9dbb65c66e9b88540d9c063758c70edc.jpg?imageView2/2/w/500/q/60/format/webp" alt="Gorra">
+            <p>camisa- $30</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <section class="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button class="btn vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Ropa</p>
+    </footer>
+
+    <script src="archivo.js"></script>
+    
+
+</body>
+</html>

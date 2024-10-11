@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pantalonesca.css">
+    <link rel="stylesheet" href="esrtilos.css">
+</head>
+<body>
+    <div class="ENCABEZADO">
+        <P>TIENDA EN LINEA</P>
+        <h1>MODA UNICA </h1>
+        <p>"encuentra todo lo que necesitas sin salir de casa"</p>
+    </div>
+
+    <section class="productos">
+
+        
+        <div class="producto" id="producto">
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/765ba1a6b675ae74a9a84714b5456e5b.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Camisa">
+            <p>Camisa - $20</p>
+            <button class="btn" onclick="agregarAlCarrito('Camisa', 20)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/d543ed3c9818ea91089c3b935ccbca3a.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp"  alt="Gorra">
+            
+            <p>camisa - $25</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://img.ltwebstatic.com/images3_pi/2022/04/11/1649647346747ca473020378577726e472ea625da5_thumbnail_720x.jpg" alt="Pantalón">
+            <p>camisa - $40</p>
+            <button class="btn" onclick="agregarAlCarrito('Pantalón', 40)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://m.media-amazon.com/images/I/81nOliMqBHL.jpg" alt="Gorra">
+            <p>camisa - $35</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+    </div>
+    </section>
+
+    <section class="productos">
+        
+        <div class="producto">
+            <img src="https://pantalonesdemezclilla.mx/cdn/shop/files/regular-cargo-jeans-marron-para-hombre_1.jpg?v=1706895864" alt="Camisa">
+            <p>Pantalon - $20</p>
+            <button class="btn" onclick="agregarAlCarrito('Camisa', 20)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://ae01.alicdn.com/kf/S4c809b7cf70b4774990bf62d2335a13e1.jpg?width=750&height=1000&hash=1750"     alt="Gorra">
+            
+            <p>Pantalon - $25</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://pantalonesdemezclilla.mx/cdn/shop/files/regular-cargo-jeans-gris-para-hombre_2_color_nuevo_58bfbf3a-85dd-4143-99bd-f089e3f5ea9f.jpg?v=1719678485" alt="Pantalón">
+            <p>Pantalon- $22</p>
+            <button class="btn" onclick="agregarAlCarrito('Pantalón', 40)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://i.pinimg.com/originals/19/68/b1/1968b10419ddcb9eb142e3eeb1f2e03b.jpg" alt="Gorra">
+            <p>Pantalon - $35</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <section class="productos">
+        
+        <div class="producto">
+            <img src="https://i.pinimg.com/736x/b4/c9/d7/b4c9d736f490b271bd59343ddcce9db8.jpg">
+            <p>Pantalones - $20</p>
+            <button class="btn" onclick="agregarAlCarrito('Camisa', 20)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://pantalonesdemezclilla.mx/cdn/shop/files/rotos-pantalones-de-mezclilla-azules-de-hombre_3.jpg?v=1706895289&width=533" alt="Gorra">
+            
+            <p>Pantalon - $15</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://pantalonesdemezclilla.mx/cdn/shop/files/rotos-pantalones-de-mezclilla-azules-de-hombre_3_5dbad5fa-3ae7-4f7c-8119-cb37ad40379c.jpg?v=1706895465" alt="Pantalón">
+            <p>Pantalon - $40</p>
+            <button class="btn" onclick="agregarAlCarrito('Pantalón', 40)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://pantalonesdemezclilla.mx/cdn/shop/files/regular-pantalones-de-mezclilla-azules-de-hombre_1.jpg?v=1706871167" alt="Gorra">
+            <p>Pantalon- $25</p>
+            <button class="btn" onclick="agregarAlCarrito('Gorra', 15)">Agregar al carrito</button>
+        </div>
+    </section>
+    <section class="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button class="btn vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Ropa</p>
+    </footer>
+
+    <script src="archivo.js"></script>
+    
+</body>
+</html>
